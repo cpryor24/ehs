@@ -1,0 +1,275 @@
+@media screen and (min-width: 320px){
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+    font-size: 18px;
+    text-align: justify;
+  }
+
+  header {
+    background: url(../images/brain.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+
+  nav .brand-logo {
+    font-size: 1rem;
+  }
+
+  .logo {
+    height: 275px;
+    width: 275px;
+  }
+
+  .hero-text {
+    position: relative;
+    height: 100vh;
+  }
+
+  .header-content {
+    position: absolute;
+    top: 30%;
+    padding: 1.5em 1.5em;
+    background: rgba(0, 0, 0, 0.4);
+    text-shadow: 0px 0px 2px #131415;
+  }
+
+  .intro > div {
+    font-size: 1.4em;
+  }
+
+  b {
+    color: #4CAF50;
+  }
+
+  .services-list {
+    color: #4CAF50;
+  }
+
+  .collapsible-body {
+    background-color: #4CAF50;
+  }
+
+  .section {
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+  }
+
+  [type="radio"]:checked+span:after,
+  [type="radio"].with-gap:checked+span:after {
+    background-color: #4caf50;
+  }
+
+  [type="radio"]:checked+span:after,
+  [type="radio"].with-gap:checked+span:before,
+  [type="radio"].with-gap:checked+span:after {
+    border: 2px solid #4caf50;
+  }
+
+  [type="checkbox"]:checked+span:not(.lever):before {
+    border-right: 2px solid #4caf50;
+    border-bottom: 2px solid #4caf50;
+  }
+
+  [type="radio"]:checked+span {
+    font-family: "Alegreya SC";
+    font-size: 18px;
+  }
+
+  .btn,
+  .btn-large,
+  .btn-small,
+  .btn-small:hover,
+  .btn:hover,
+  .btn::after {
+    background-color: #0d47a1;
+  }
+
+  .scene {
+    height: 400px;
+    perspective: 600px;
+    margin-top: 20px;
+  }
+
+  .ehs-card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .card__face {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+  }
+
+  .card__face--front {
+    background: #0D47A1;
+    border-radius: 10px;
+    font-size: 3em;
+    padding: 44px;
+    padding-top: 50%;
+  }
+
+  .card__face--front:hover {
+    transform: skewY(-8deg);
+  }
+
+  .card__face--back {
+    background: #4CAF50;
+    transform: rotateY( 180deg );
+    border-radius: 10px;
+    padding: 30px;
+  }
+
+  .values p {
+    margin: 10px 0;
+  }
+
+  .values p:first-child {
+    margin-top: 0;
+  }
+
+  .ehs-card.is-flipped {
+    transform: rotateY(180deg);
+  }
+
+  .ehs-card {
+    transform-origin: center right;
+  }
+
+  .ehs-card.is-flipped {
+    transform: translateX(-100%) rotateY(-180deg);
+    background-color: #4CAF50;
+  }
+
+  .card-content {
+    height: 400px;
+  }
+
+  textarea.materialize-textarea:focus:not([readonly]),
+  input[type=text]:not(.browser-default):focus:not([readonly]),
+  input[type=email]:not(.browser-default):focus:not([readonly]){
+    border-bottom: 2px solid #4caf50;
+    box-shadow: 1px 0 0 #4caf50;
+  }
+
+  input[type=text]:not(.browser-default):focus:not([readonly])+label,
+  input[type=email]:not(.browser-default):focus:not([readonly])+label,
+  textarea.materialize-textarea:focus:not([readonly])+label {
+    color: #4caf50;
+  }
+
+  .reCAPTCHA {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 600px) {
+
+  nav .brand-logo {
+    font-size: 2rem;
+  }
+
+  .header-content {
+    position: absolute;
+    top: 23%;
+    right: 10% !important;
+    color: #fff;
+    padding: 1.5em 1.5em;
+    background: rgba(0, 0, 0, 0.1);
+    text-shadow: 0px 0px 2px #131415;
+  }
+
+
+  .intro > div {
+    font-size: 1em;
+  }
+
+  .intro > p {
+    font-size: 0.8em;
+  }
+
+  .logo {
+    height: 530px;
+    width: 530px;
+  }
+
+  .card__face--front {
+    background: #0D47A1;
+    border-radius: 10px;
+    font-size: 2em;
+    padding: 0px;
+    padding-top: 50%;
+  }
+
+  .card__face--back {
+    background: #4CAF50;
+    transform: rotateY( 180deg );
+    border-radius: 10px;
+    padding: 30px;
+  }
+
+  .card__face--back {
+    padding: 15px;
+    font-size: 0.8em;
+  }
+
+  .spacing {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 3.56rem;
+  }
+
+}
+
+@media screen and (min-width: 960px) {
+  .header-content {
+    position: absolute;
+    top: 30%;
+    right: 10% !important;
+    color: #fff;
+    padding: 1.5em 1.5em;
+    background: rgba(0, 0, 0, 0.1);
+    text-shadow: 0px 0px 2px #131415;
+  }
+
+  .intro > div {
+    font-size: 2.13em;
+  }
+
+  .intro > p {
+    font-size: 1.4em;
+  }
+
+  .card__face--front {
+    background: #0D47A1;
+    border-radius: 10px;
+    font-size: 2em;
+    padding: 0px;
+    padding-top: 50%;
+  }
+
+  .card__face--back {
+    background: #4CAF50;
+    transform: rotateY( 180deg );
+    border-radius: 10px;
+    padding: 30px;
+  }
+
+  .card__face--back {
+    padding: 40px;
+    font-size: 1em;
+  }
+}
