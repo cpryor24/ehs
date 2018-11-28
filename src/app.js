@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
   let email = document.querySelector('#email');
   let message = document.querySelector('#message');
   let checked = document.querySelectorAll('input[name="services"]')
-  let formAction = form.action = "https://formspree.io/elitehabilitationservices@gmail.com"
+  let formAction = form.action = "https://formspree.io/c.hall@elitehabilitationservices.com"
 
   // Initialize materialize components
   let sideNavInstance = M.Sidenav.init(sideNav);
